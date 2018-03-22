@@ -34,8 +34,22 @@ df= data.frame(rlno=c(1,2,3), name=c('A','B','C'), course=c('MBA','BBA','MBA'), 
 df = fix(df)
 str(df)
 class(df)
+df
+df$rlno
+df$gender= c('M','F','M','M')
+df$gender = factor(df$gender)
+str(df)
+df$grades = c('A','B','A','C')
+str(df)
+df$grades= factor(df$grades, ordered = T)
+df$grades
+df$grades= factor(df$grades, ordered = T, labels=c('C','B','A'))
+df$grades
+
+
+#list----
 ls()
-#rm(list=ls())
+  #rm(list=ls())
 (mylist = list(1, df, v4))
 
 ?matrix
